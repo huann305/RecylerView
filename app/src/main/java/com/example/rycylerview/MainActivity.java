@@ -6,6 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.rycylerview.adapter.MyAdapter;
+import com.example.rycylerview.model.Item;
+
 import java.util.ArrayList;
 import java.util.List;
 

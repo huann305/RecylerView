@@ -1,4 +1,4 @@
-package com.example.rycylerview;
+package com.example.rycylerview.model;
 
 public class Item {
     private int image;

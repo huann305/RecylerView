@@ -1,4 +1,4 @@
-package com.example.rycylerview;
+package com.example.rycylerview.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.rycylerview.model.Item;
+import com.example.rycylerview.R;
 
 import java.util.List;
 
