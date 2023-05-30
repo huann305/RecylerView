@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/a"
+        android:scaleType="fitCenter"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageAvatar"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:src="@drawable/a"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:text="Check"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/imageAvatar"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/imageView"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="#BAB4B4"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        />-->
+
+</RelativeLayout>
