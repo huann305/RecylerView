@@ -14,18 +14,16 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
-    Context context;
     List<Item> items;
 
-    public MyAdapter(Context context, List<Item> items) {
-        this.context = context;
+    public MyAdapter(List<Item> items) {
         this.items = items;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(LayoutInflater.from(context).inflate(R.layout.item_view, parent, false));
+        return new MyViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_view, parent, false));
     }
 
     @Override
@@ -40,6 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public int getItemCount() {
+        if(items == null) return 0;
         return items.size();
     }
 }
